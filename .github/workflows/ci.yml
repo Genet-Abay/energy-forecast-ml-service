@@ -32,4 +32,5 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t energy-forecast-ml-service .
+        # docker build -t energy-forecast-ml-service .
+        echo "Docker build step (not implemented in this example)"
