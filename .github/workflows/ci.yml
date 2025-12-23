@@ -26,11 +26,9 @@ jobs:
 
     - name: Run tests
       run: |
-        #testing
-        pip install pytest
+        export PYTHONPATH=$PYTHONPATH:$(pwd)/src
         pytest tests/
 
     - name: Build Docker image
       run: |
-        # docker build -t energy-forecast-ml-service .
         echo "Docker build step (not implemented in this example)"
